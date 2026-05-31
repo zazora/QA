@@ -1,0 +1,349 @@
+/* ================================================= */
+/* СБРОС СТИЛЕЙ */
+/* ================================================= */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+/* ================================================= */
+/* ОСНОВНОЙ ФОН */
+/* ================================================= */
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #ffffff;
+
+    line-height: 1.7;
+
+    overflow-x: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(0,255,255,0.08),
+            transparent 250px
+        ),
+
+        radial-gradient(
+            circle at 80% 15%,
+            rgba(120,0,255,0.12),
+            transparent 300px
+        ),
+
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(0,255,255,0.05),
+            transparent 250px
+        ),
+
+        radial-gradient(
+            circle at 90% 75%,
+            rgba(120,0,255,0.08),
+            transparent 300px
+        ),
+
+        linear-gradient(
+            180deg,
+            #202328,
+            #2b2f36,
+            #242830,
+            #1d2025
+        );
+
+}
+
+/* ================================================= */
+/* ДОПОЛНИТЕЛЬНЫЕ ТЕМНЫЕ КРУГИ */
+/* ================================================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    width: 700px;
+
+    height: 700px;
+
+    top: -250px;
+
+    left: -200px;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.18);
+
+    filter: blur(80px);
+
+    z-index: -1;
+
+}
+
+body::after {
+
+    content: "";
+
+    position: fixed;
+
+    width: 600px;
+
+    height: 600px;
+
+    bottom: -200px;
+
+    right: -150px;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.25);
+
+    filter: blur(100px);
+
+    z-index: -1;
+
+}
+
+/* ================================================= */
+/* ВСЕ БЛОКИ */
+/* ================================================= */
+
+section {
+
+    width: min(1100px, 92%);
+
+    margin: 40px auto;
+
+    padding: 35px;
+
+    background: rgba(43, 20, 70, 0.90);
+
+    border: 1px solid #000000;
+
+    border-radius: 18px;
+
+    box-shadow:
+
+        0 0 5px #00ffff,
+
+        0 0 10px rgba(0,255,255,0.7),
+
+        inset 0 0 12px rgba(0,255,255,0.15);
+
+}
+
+/* ================================================= */
+/* HERO */
+/* ================================================= */
+
+.hero {
+
+    text-align: center;
+
+    margin-top: 60px;
+
+}
+
+.hero h1 {
+
+    font-size: 4rem;
+
+    color: #00ffff;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+
+        0 0 10px #00ffff,
+
+        0 0 20px #00ffff,
+
+        0 0 35px #00ffff;
+
+}
+
+.hero h2 {
+
+    font-size: 1.4rem;
+
+    color: #e2e2ff;
+
+    margin-bottom: 20px;
+
+}
+
+.hero p {
+
+    max-width: 800px;
+
+    margin: auto;
+
+}
+
+/* ================================================= */
+/* КНОПКИ */
+/* ================================================= */
+
+.buttons {
+
+    margin-top: 35px;
+
+}
+
+.buttons a {
+
+    display: inline-block;
+
+    margin: 8px;
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+
+    color: #00ffff;
+
+    background: #35145b;
+
+    border: 1px solid #000000;
+
+    border-radius: 12px;
+
+    box-shadow:
+
+        0 0 8px #00ffff,
+
+        inset 0 0 10px rgba(0,255,255,0.15);
+
+    transition: 0.25s ease;
+
+}
+
+.buttons a:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+
+        0 0 15px #00ffff,
+
+        0 0 25px #00ffff;
+
+}
+
+/* ================================================= */
+/* ЗАГОЛОВКИ */
+/* ================================================= */
+
+section h2 {
+
+    color: #00ffff;
+
+    margin-bottom: 20px;
+
+}
+
+/* ================================================= */
+/* СПИСОК УСЛУГ */
+/* ================================================= */
+
+.services ul {
+
+    list-style: none;
+
+}
+
+.services li {
+
+    padding: 8px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+
+}
+
+/* ================================================= */
+/* ЖАНРЫ */
+/* ================================================= */
+
+.genre-grid {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+}
+
+.genre-grid span {
+
+    padding: 10px 18px;
+
+    background: #35145b;
+
+    border: 1px solid #000000;
+
+    border-radius: 10px;
+
+    box-shadow:
+
+        0 0 5px #00ffff;
+
+}
+
+/* ================================================= */
+/* ССЫЛКИ */
+/* ================================================= */
+
+a {
+
+    color: #00ffff;
+
+}
+
+/* ================================================= */
+/* МОБИЛЬНАЯ ВЕРСИЯ */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+    section {
+
+        padding: 25px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 2.5rem;
+
+    }
+
+    .hero h2 {
+
+        font-size: 1.1rem;
+
+    }
+
+    .buttons a {
+
+        display: block;
+
+        width: 100%;
+
+        margin: 10px 0;
+
+        text-align: center;
+
+    }
+
+}
