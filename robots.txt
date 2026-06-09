@@ -1,5 +1,0 @@
-User-agent: *
-
-Allow: /
-
-Sitemap: https://zazora.github.io/muzAIJ/sitemap.xml
